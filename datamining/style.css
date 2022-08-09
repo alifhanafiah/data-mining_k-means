@@ -1,0 +1,261 @@
+@import url("https://rsms.me/inter/inter-ui.css");
+
+:root {
+  /* color palette */
+  --clr-lighter: #eeeeee;
+  --clr-light: #00adb5;
+  --clr-dark: #393e46;
+  --clr-darker: #222831;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Inter UI", sans-serif;
+  background-color: var(--clr-darker);
+  color: var(--clr-lighter);
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+
+.box {
+  max-width: 1128px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* login */
+#login {
+  color: var(--clr-lighter);
+  background-color: var(--clr-dark);
+  margin: 15em auto;
+  box-shadow: 0 0 5px var(--clr-light);
+  border-radius: 2em;
+}
+
+.form__login {
+  text-align: center;
+}
+
+#username,
+#password {
+  margin: 1em 0;
+  border: none;
+}
+
+#login__btn {
+  display: inline-block;
+  width: 50%;
+}
+
+.error {
+  color: rgb(200, 0, 0);
+  font-weight: bold;
+  margin: 1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* menu */
+.nav {
+  background-color: var(--clr-light);
+}
+
+ul#menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3em;
+  font-weight: bold;
+}
+
+li {
+  text-transform: capitalize;
+}
+
+li + li {
+  margin-left: 2em;
+}
+
+/* main */
+.main {
+  /* background-color: var(--clr-dark); */
+  min-height: 100vh;
+  padding-bottom: 5em;
+}
+
+.welcome {
+  padding: 2em 0;
+  font-style: italic;
+}
+
+/* hero */
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hero__desc {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.hero__title {
+  font-size: 2.5rem;
+  margin: 0.5em 0;
+  font-weight: bold;
+}
+
+.text + .text {
+  margin-top: 1em;
+}
+
+.hero__image {
+  width: 50%;
+  align-self: flex-start;
+}
+
+/* form */
+.form__input {
+  margin-bottom: 1em;
+}
+
+.data-proses__table {
+  margin: 2em 0;
+}
+
+.center {
+  text-align: center;
+}
+
+/* hasil */
+.hasil__iterasi {
+  margin: 1em 0;
+}
+
+.hasil__cluster {
+  margin-bottom: 0.5em;
+}
+
+/* footer */
+.footer {
+  background-color: var(--clr-light);
+  height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.footer p,
+.footer a {
+  color: inherit;
+  font-weight: bold;
+}
+
+fieldset {
+  margin: 10px;
+  border: none;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="file"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.8em;
+  margin-top: 1em;
+  border: 1px solid var(--clr-dark);
+  border-radius: 1em;
+  background-color: var(--clr-lighter);
+  font-family: inherit;
+  color: var(--clr-light);
+}
+
+input[type="submit"] {
+  width: 100%;
+  margin: 1em 0;
+  color: var(--clr-lighter);
+  background-color: var(--clr-light);
+  padding: 0.8em;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 1.5em;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  padding: 1em;
+  background-color: var(--clr-light);
+  text-align: center;
+  color: var(--clr-lighter);
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+td {
+  padding: 1em;
+  background-color: var(--clr-lighter);
+  color: var(--clr-light);
+  font-size: 0.875rem;
+}
+
+a {
+  color: var(--clr-lighter);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--clr-darker);
+}
+
+/* untuk tombol */
+.btn {
+  font-size: 0.875rem;
+  padding: 0.7em;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.7em;
+}
+
+.btn-more {
+  color: var(--clr-lighter);
+  background-color: var(--clr-light);
+  text-transform: capitalize;
+}
+
+.btn-more:hover {
+  color: var(--clr-light);
+  background-color: var(--clr-lighter);
+}
+
+.tambah {
+  margin: 1em 0;
+  display: inline-block;
+}
+
+.cetak {
+  margin: 1em 0;
+  display: inline-block;
+}
